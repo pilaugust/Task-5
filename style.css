@@ -1,0 +1,211 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, auto);
+    padding: 10px;
+    gap: 10px;
+    height: auto;
+    width: 1000px;
+}
+
+.grid-container > div {
+    display: flex;
+    justify-content: center;
+}
+
+
+.searchfield {
+    grid-column: 1 / span 6;
+    cursor: text;
+}
+
+.searchbar {
+    width: 660px;
+    height: 40px;    
+    color: #1e1e1f;
+    border: 1px solid #bababa;
+    border-radius: 4px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    outline: none;
+    background-image: url(./task5_images/søk.png);
+    background-repeat: no-repeat;
+    background-position: 620px;
+    background-size: 30px 30px;
+}
+
+.searchbar::placeholder {
+    color: #bababa;
+}
+
+.searchbar:focus {
+    border-color: rgb(0, 188, 240);
+    border-width: 2px;
+}
+
+.ad {
+    grid-column: span 2;
+    grid-row: span 5;
+}
+
+.title {
+    grid-column: span 7;
+}
+
+.img {
+    grid-column: span 2;
+    cursor: pointer;
+}
+
+.imgdesc {
+    grid-column: span 2;
+}
+
+.fill2 {
+    grid-column: span 2;
+}
+
+.imgdesc {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.imagefile {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #a8a8a8;
+    border-radius: 5px;
+}
+
+.burgerking {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.desc {
+    grid-column: span 2;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1e1e1f;
+    margin-left: -120px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+
+.mainbuttons {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    color: #1e1e1f;
+    padding-top: 8px;
+}
+
+.karttekst {
+    cursor: pointer;
+    font-size: 15px;
+    color: #1e1e1f;
+    margin-top: -3px;
+}
+
+.category {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    font-size: small;
+    color: #474747;
+    text-align: center;
+}
+
+.subgridlink {
+    padding-left: 10px;
+    cursor: pointer;
+    color: rgb(0, 116, 205);
+    padding-top: 21px;
+}
+
+.mainbuttonimg {
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.kartknapp {
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.search {
+    width: 25x;
+    height: 27px;
+    padding-left: 615px;
+    padding-top: 6px;
+    padding-right: 5px;
+    position: absolute;
+}
+
+.subgridsmall {
+    color: #777777;
+}
+
+.subgridtittel {
+    margin-left: -350px;
+    color: #1e1e1f;
+}
+
+.subgridstilling {
+    left: 0;
+    color: #1e1e1f;
+}
+
+.categoryimg {
+    justify-content: center;
+    object-fit: cover;
+    width: 40px;
+    height: 30px;
+    align-self: center;
+}
+
+
+.line {
+    grid-column: 1 / span 9;
+    height: 1px; 
+    background-color: #bababa;
+    width: 100%;
+    margin-top: -15px;
+}
